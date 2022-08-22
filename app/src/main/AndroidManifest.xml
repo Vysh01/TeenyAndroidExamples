@@ -15,8 +15,9 @@
         <activity android:name=".ActivityHorizontalRV" />
         <activity android:name=".ActivityNoActionBar" />
         <activity android:name=".ActivityTTS" />
+        <activity android:name=".ActivityMusicPlayStream" />
         <activity
-            android:name=".ActivityMusicPlayStream"
+            android:name=".ActivityDownload"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
