@@ -42,6 +42,7 @@ public class ActivityDownload extends Activity {
                         downloadPdf(editText.getText().toString());
                     }
                 });
+                builder.show();
             }
         });
 
