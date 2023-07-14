@@ -1,10 +1,14 @@
 package com.thecodecity.teenyexamples;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,12 +28,11 @@ public class ActivityRvProducts extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SplashScreen.installSplashScreen(this);
         setContentView(R.layout.activity_rv_products);
         rvProducts = findViewById(R.id.rvProducts);
-
         getProducts();
     }
-
     private void getProducts() {
         Call<List<ProductResult>> apiCall = RetrofitClient.getInstance().getApis().getProducts();
         apiCall.enqueue(new Callback<List<ProductResult>>() {

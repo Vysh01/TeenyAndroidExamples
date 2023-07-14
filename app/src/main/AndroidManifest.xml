@@ -11,19 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeenyExamples"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ActivityRvProducts" />
-        <activity android:name=".ActivityHorizontalRV" />
-        <activity android:name=".ActivityNoActionBar" />
-        <activity android:name=".ActivityTTS" />
-        <activity android:name=".ActivityMusicPlayStream" />
         <activity
-            android:name=".ActivityDownload"
-            android:exported="true">
+            android:name=".ActivityRvProducts"
+            android:exported="true"
+            android:theme="@style/Theme.TeenyExamples.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivityHorizontalRV" />
+        <activity android:name=".ActivityNoActionBar" />
+        <activity android:name=".ActivityTTS" />
+        <activity android:name=".ActivityMusicPlayStream" />
+        <activity android:name=".ActivityDownload" />
 
         <service android:name=".services.BackgroundMusicService" />
     </application>
