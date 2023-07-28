@@ -12,14 +12,14 @@
         android:theme="@style/Theme.TeenyExamples"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ActivityRvProducts"
-            android:exported="true"
-            android:theme="@style/Theme.TeenyExamples.SplashScreen">
+            android:name=".ActivityRegister"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActivityLogin" />
         <activity android:name=".ActivityHorizontalRV" />
         <activity android:name=".ActivityNoActionBar" />
         <activity android:name=".ActivityTTS" />
